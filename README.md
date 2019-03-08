@@ -1,2 +1,4 @@
-# GKE Ingress Healthcheck Middleware
-A http middleware for use with GKE ingress and its health-check.
+# GKE Ingress Health Check Middleware [![GoDoc](https://godoc.org/github.com/tumelohq/gke-ingress-healthcheck-middleware?status.svg)](https://godoc.org/github.com/tumelohq/gke-ingress-healthcheck-middleware) [![Go Report Card](https://goreportcard.com/badge/github.com/tumelohq/gke-ingress-healthcheck-middleware)](https://goreportcard.com/report/tumelohq/gke-ingress-healthcheck-middleware)
+
+ 
+GKE Ingress Health Check Middleware is a http-middleware package that is designed to be used with the Ingress in GKE on the Google Cloud Platform. The ingress requires the root path of the target to return a 200 (OK) to indicate the service's good health. This can be quite a challenging demand depending on the application's path design. This middleware filters out the requests from the health check and returns the health of the service.
